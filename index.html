@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Daora Hamburgueria | Hambúrgueres artesanais</title>
+
+        <link rel="stylesheet" href="styles/output.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    </head>
+
+    <body>
+        
+        <!-- Header -->
+
+        <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+            <div class="w-full h-full flex flex-col justify-center items-center">
+
+                <img src="assets/WhatsApp Image 2024-04-07 at 15.08.58.jpeg" alt="Logo Daora Hamburgueria" class="w-28 h-28 rounded-full shadow-lg hover:scale-110 duration-200">
+
+                <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Daora Hamburgueria</h1>
+
+                <span class="text-white font-medium">Av. Alexandre Costa, 2860 - Res. Helio Queiroz</span>
+
+                <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+
+                    <span class="text-white font-medium">Ter á Dom - 17:00 as 23:30</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Fim header -->
+
+        <h2 class="text-2xl font-bold text-center mt-9 mb-6 md:text-3xl">Burguers</h2>
+
+        <!-- Inicio menu -->
+
+        <div id="menu">
+
+            <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-2 mb-16 md:gap-10 lg:grid-cols-3">
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/118.jpg" alt="Onion Cheddar Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Onion Cheddar Burguer</p>
+
+                        <p class="text-sm">Pão briche selado na churrasqueira, Blend suculento de carne bovina 180g, Muçarela derretida, Delicioso molho de cheddar Daora, Anel de cebola empanada na farinha panko e farofa de bacon.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$26.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Onion Cheddar Burguer" data-price="26.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/images (5).jpg" alt="Aqueeele Cheddar Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Aqueeele Cheddar Burguer</p>
+
+                        <p class="text-sm">Um pão de brioche tostado na churrasqueira, 1 blend suculento de carne bovina de 120g, Queijo muçarela derretido, Queijo Coalho maçaricado, Porção generosa do delicioso molho de Cheddar daora e cebola caramelizada!</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$22.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Aqueeele Cheddar Burguer" data-price="22.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/4-tipos-de-bacon-em-um.jpg" alt="Eita Siô Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Eita Siô Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira, 2 blends suculentos de carne bovina 180g (360g), Mucarela derretida, Molho Maneiro (Molho à base de queijos), Bacon crocante, Cebola caramelizada e tomate fatiado.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$35.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Eita Siô Burguer" data-price="35.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/grilled-onion-cheddar-burger-one.jpg" alt="Ôxe Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Ôxe Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira, Blend suculento de carne bovina 180g.
+                        Mucarela derretida, Queijo coalho maçaricado,
+                        Molho maneiro (Molho à base de queijos),
+                        Carne seca flambada na cachaça e geléia de pimenta artesanal.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$25.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Ôxe Burguer" data-price="25.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/images (1).jpg" alt="Siô Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Siô Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira, Blend suculento de carne bovina 180g.
+                            Queijo muçarela derretida, Molho maneiro (Molho à base de queijos),
+                            Bacon crocante, Cebola caramelizada e tomate fatiado.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$26.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Siô Burguer" data-price="26.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/images (2).jpg" alt="BBQ Crispy Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">BBQ Crispy Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira, Blend suculento de carne bovina 180g.
+                            Muçarela derretida,
+                            Cebola crispy temperada, Molho BBQ
+                            artesanal e bacon crocante.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$23.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="BBQ Crispy Burguer" data-price="23.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/Cheddar_McMELT_alta_OK-1024x643.jpg" alt="Daora Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Daora Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira, Blend suculento de carne bovina 180g.
+                            Queijo muçarela derretida, Alface crocante, Tomate fatiado, Cebola caramelizada e Molho maneiro (Molho à base de queijos).</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$20.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Daora Burguer" data-price="20.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/images (4).jpg" alt="Daora Tasty Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Daora Tasty Burguer</p>
+
+                        <p class="text-sm">Pão brioche selado na churrasqueira.
+                            Blend suculento de carne bovina 180g.
+                            Mucarela Derretida, Farofa de bacone
+                            delicioso molho Tasty (segredo da casa).</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$24.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Daora Tasty Burguer" data-price="24.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+                <!-- Produtos -->
+
+                <div class="flex gap-2">
+
+                    <img src="assets/images.jpg" alt="Marmininu Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div>
+
+                        <p class="font-bold">Marmininu Burguer</p>
+
+                        <p class="text-sm">Pão de batata selado na churrasqueira, Muçarela derretida, Molho irado (Molho à base de tomate e ervas) com picles de
+                            cebolaroxatataca</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$17.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Marmininu Burguer" data-price="17.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim produtos -->
+
+            </main>
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+
+                <h2 class="text-2xl font-bold text-center mt-9 mb-6 md:text-3xl">Combo</h2>
+
+            </div>
+
+            <!-- Grid Combos -->
+
+            <div class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-2 mb-16 md:gap-10 lg:grid-cols-3" id="menu">
+
+                <!-- combo item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/2-burgers-batata-refri-1660931704.webp" alt="Combo 01" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Combo 01</p>
+
+                        <p class="text-sm">1 Siô Burguer + 1 Aqueele Cheddar,<br>
+                            2 adicionais de batata;
+                            2 refrigerantes lata.
+                            *Bancon em Dobro
+                            *Maionese Daora em Dobro</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$74.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Combo 01" data-price="74.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim combo item -->
+
+                <!-- combo item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/combo-pro-parceiro-2-cheese-bacon-2-refris-latas-e-2-batatas-chips-101287.jpg" alt="Combo 02" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Combo 02</p>
+
+                        <p class="text-sm">1 Daora Tasty + 1 Aquele Cheddar
+                            2 adicionais de batata;
+                            2 refrigerantes lata.
+                            *Bancon em Dobro
+                            *Maionese Daora em Dobro</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$70.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Combo 02" data-price="70.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim combo item -->
+
+            </div>
+
+            <!-- Fim grid combos -->
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+
+                <h2 class="text-2xl font-bold text-center mt-9 mb-6 md:text-3xl">Porções</h2>
+
+            </div>
+
+            <!-- Grid Porções -->
+
+            <div class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-2 mb-16 md:gap-10 lg:grid-cols-3" id="menu">
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/R.jpg" alt="Batata Daora(500g)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Batata Daora(500g)</p>
+
+                        <p class="text-sm">Acompanhamento perfeito, com cheddar e bacon traz um sabor único, além de ser muito gostosa e cremosa por dentro.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$23.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Batata Daora" data-price="23.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/Batatosa-scaled.jpg" alt="Batata Daora(250g)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Batata Daora(250g)</p>
+
+                        <p class="text-sm">Acompanhamento perfeito, com cheddar e bacon traz um sabor único, além de ser muito gostosa e cremosa por dentro.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$21.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Batata Daora(250g)" data-price="21.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/17_57_57_452_Pastel_fotos.webp" alt="Pastelzinho" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Pastelzinho</p>
+
+                        <p class="text-sm">5 unidades de pastéis sequinhos, de queijo muçarela derretido e carne seca desfiada flambada na cachaça.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$15.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Pastelzinho" data-price="15.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/RECEITA-DE-PALITOS-DE-QUEIJO.jpg" alt="Palitos de Queijo Coalho" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Palitos de Queijo Coalho</p>
+
+                        <p class="text-sm">Aqueles Palitos de queijo coalho empanados na farinha Panko. crocantes, temperados e deliciosos que você respeita!</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$17.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Palitos de Queijo Coalho" data-price="17.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/Onion-rings.jpg" alt="Onion rings(300g)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Onion rings(300g)</p>
+
+                        <p class="text-sm">Cortadas em forma de anéis, empanadas com farinha panko já temperada.  Acompanha Maionese de Pimenta</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$15.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Onion rings(300g)" data-price="15.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+                <!-- porções item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/carne_de_sol.jpg" alt="Carne de Sol Daora" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Carne de Sol Daora</p>
+
+                        <p class="text-sm">Carne de Sol caseira, trinchada, flambada na cachça, com cebolas picotadas. Acompanha batata frita e Maionese Daora</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$42.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Carne de Sol Daora" data-price="42.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim porções item -->
+
+            </div>
+
+            <!-- Fim grid porções -->
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+
+                <h2 class="text-2xl font-bold text-center mt-9 mb-6 md:text-3xl">Bebidas</h2>
+
+            </div>
+
+            <!-- Grid Bebidas -->
+
+            <div class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-2 mb-16 md:gap-10 lg:grid-cols-3" id="menu">
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/11825132.webp" alt="Água sem Gás" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Água sem Gás</p>
+
+                        <p class="text-sm"></p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$3.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Água sem Gás" data-price="3.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim pbebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/OIP.jpg" alt="Água com Gás" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Água com Gás</p>
+
+                        <p class="text-sm"></p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$4.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Água com Gás" data-price="4.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/40e767_7bff3344182b4f829aef1b862dbdf393~mv2.jpg" alt="Chopp" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Chopp</p>
+
+                        <p class="text-sm">Rambeer</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$12.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Chopp" data-price="12.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/Refrigerentes-768x768.webp" alt="Refrigerantes(lata)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Refrigerantes(lata)</p>
+
+                        <p class="text-sm">Coca-cola, Coca-cola Zero, Guaraná Jesus,  Guaraná Antarctica, Schweppes, Fanta Laranje e Fanta uva.</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$6.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Refrigerantes(lata)" data-price="6.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/coca-cola-guarana-1-litro.jpg" alt="Refrigerantes(1litro)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Refrigerantes(1litro)</p>
+
+                        <p class="text-sm">Coca-cola, Guaraná Jesus, Guaraná Antarctica e Fanta Laranja</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$10.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Refrigerantes(1litro)" data-price="10.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/R (1).jpg" alt="Sucos(adicional de leite + R$ 2,00)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Sucos(adicional de leite + R$ 2,00)</p>
+
+                        <p class="text-sm">Abacaxi, Acerola, Cajá, Goiaba e Limão</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$5.99</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Sucos(adicional de leite + R$ 2,00)" data-price="5.99"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/38614203_m.jpg" alt="Sucos(adicional de leite + R$ 2,00)" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Sucos(adicional de leite + R$ 2,00)</p>
+
+                        <p class="text-sm">Abacaxi com Hortelã, Bacuri, Cupuaçu e Maracujá</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$6.99</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Sucos(adicional de leite + R$ 2,00)" data-price="6.99"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/cv-ln-budweiser.jpg" alt="LongNeck" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">LongNeck</p>
+
+                        <p class="text-sm">Budweiser, Cacildis e Cbaré</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$10.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="LongNeck" data-price="10.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/R (2).jpg" alt="LongNeck" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">LongNeck</p>
+
+                        <p class="text-sm">Heineken</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$12.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="LongNeck" data-price="12.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+                <!-- bebidas item -->
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="assets/OIP (1).jpg" alt="Drinks" class="w-29 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+
+                        <p class="font-bold">Drinks</p>
+
+                        <p class="text-sm">Caipirinha, Gin Tonic e Laranja Blue</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+
+                            <p class="font-bold text-lg">R$20.00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Drinks" data-price="20.00"><i class="bi bi-bag-plus-fill text-lg text-white"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fim bebidas item -->
+
+            </div>
+
+            <!-- Fim grid bebidas -->
+
+        </div>
+
+        <!-- Fim menu -->
+
+        <!-- Modal cart -->
+
+        <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+                
+
+                </div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+                <p class="font-bold mt-4">Endereço de entrega</p>
+
+                <input type="text" placeholder="Digite seu Bairro, Rua e número de entrega" id="address" class="w-full border-2 p-1 rounded my-1">
+
+                <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+                <div class="flex items-center justify-between mt-5 w-full">
+
+                    <button id="close-modal-btn">Fechar</button>
+
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Fim modal cart -->
+
+        <!-- Botton Card footer -->
+
+        <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn"> (<span id="cart-count"> 0 </span>) 
+                Veja meu carrinho
+                <i class="bi bi-cart text-lg text-white"></i>
+            </button>
+
+        </footer>
+
+        <!-- Fim botton Card footer -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js">
+            
+        </script>
+
+        <script src="script.js">
+
+        </script>
+
+    </body>
+
+</html>
